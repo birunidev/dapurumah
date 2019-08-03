@@ -1,0 +1,351 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Work Sans';
+}
+
+.container .order .food img:hover,
+.container .order .beverages img:hover {
+    transform: scale(1.2);
+    border: 2px solid #E4791E;
+    cursor: pointer;
+}
+
+.container .form-order {
+    margin-top: 30px;
+    color: #E4791E;
+}
+
+
+
+
+nav .navbar-toggler:target {
+    border: none;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    text-align: center;
+    height: 350px;
+    background: url(../img/phone.jpg) no-repeat;
+    background-position: center;
+}
+
+.jumbotron .display-4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 2px 1px rgb(77, 77, 77);
+}
+
+.jumbotron h3 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 1px rgb(77, 77, 77);
+
+}
+
+.jumbotron .btn {
+    background: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #E4791E;
+    -webkit-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+}
+
+.container .row .fast {
+    color: #E4791E !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .row .desc {
+    color: #E4791E;
+}
+
+.container .row .btn {
+    color: white;
+    background: #E4791E;
+    border-radius: 20px;
+
+}
+
+.container .row .gojek {
+    text-align: center;
+}
+
+.container .menu {
+    text-align: center;
+}
+
+.container .menu .menu-title {
+    color: #E4791E;
+}
+
+.container .menu .menu-sub-title {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container .menu .menu-sub-title span {
+    color: #E4791E;
+}
+
+.container .menu h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.container .menu p {
+    color: #E4791E;
+}
+
+.container .service {
+    text-align: center;
+}
+
+.container .service p {
+    color: #E4791E;
+}
+
+.container .service h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container .service span {
+    color: #E4791E;
+}
+
+.container .service-image img {
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 19px -16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px -16px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px -16px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.container .about {
+    text-align: center;
+}
+
+.container .about .img-wrapper {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.container .about .img-wrapper img {
+    width: 100%;
+    transform: scale(2);
+}
+
+.container .about p {
+    color: #E4791E;
+}
+
+.container .about .find-us {
+    color: #000;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #E4791E;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* Media Query */
+
+/* Ipad */
+@media (min-width: 768px) and (max-width: 992px) {
+    .jumbotron {
+        background: url(../img/ipad.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0 !important;
+    }
+
+    .container .row .fast {
+        color: #E4791E !important;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container .row .desc {
+
+        text-align: left;
+    }
+
+    .container .menu p {
+        text-align: left;
+    }
+
+    .container .about .about-title {
+        text-align: center;
+    }
+
+    .container .about .find-us {
+        text-align: center;
+    }
+
+    .container .about p {
+        color: #E4791E;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .container .row .gojek {
+        text-align: left;
+    }
+
+    .container .menu .menu-title {
+        text-align: center !important;
+    }
+
+
+
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+
+    .nav-link::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #E4791E;
+        width: 0%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        transition: 0.1s;
+    }
+
+
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #E4791E;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+
+    }
+
+    .nav-item .btn {
+        text-transform: uppercase;
+        color: #E4791E;
+        border-radius: 20px;
+    }
+
+    .nav-item .btn:hover {
+        background: #E4791E;
+        color: white;
+        border: none;
+        margin-left: 2px;
+    }
+
+
+    .jumbotron {
+        background: url(../img/homepage.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* margin-top: -100px; */
+        margin-top: -110px;
+        height: 450px;
+        border-radius: 0 !important;
+    }
+
+    .jumbotron .display-4 {
+        margin: 90px auto 0;
+    }
+
+    .jumbotron h3 {
+        font-size: 40px;
+    }
+
+    .jumbotron .btn:hover {
+        background: #E4791E;
+        color: white;
+        border: none;
+    }
+
+    .container .row .fast {
+        font-size: 40px;
+    }
+
+    .container .row .desc {
+
+        text-align: left;
+    }
+
+    .container .menu p {
+        text-align: left;
+    }
+
+    .container .menu .menu-title {
+        text-align: center !important;
+    }
+
+    .container .about .about-title {
+        text-align: center;
+    }
+
+    .container .about p {
+        text-align: left;
+    }
+
+    .container .about .about-content {
+        margin-top: 60px;
+        font-size: 19px;
+    }
+
+    .container .row .gojek {
+        text-align: left;
+    }
+
+    .container .about .img-wrapper {
+        height: 350px;
+        width: 350px;
+    }
+
+    .container .about .find-us {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .container .gojek .btn:hover {
+        background: white;
+        color: #E4791E;
+        border: 1px solid #E4791E;
+
+    }
+
+
+}
